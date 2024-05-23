@@ -1,0 +1,57 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+#microphing_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  transition: width 0.9s;
+  transition-delay: 0.6s;
+}
+
+.container {
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 97%);
+  box-shadow: 0 4px 20px rgb(0, 0, 0, 0.2);
+  border-radius: 50px;
+  position: relative;
+  transition: width 1.5s;
+}
+#input {
+  border: none;
+  outline: none;
+  background-color: hsl(0, 0%, 97%);
+  width: 200px;
+  height: 30px;
+  transition: width 0.8s;
+  transition-delay: 0.3s;
+}
+.active {
+  width: 50px;
+}
+.active #input {
+  width: 0;
+}
+.active #microphing_icon {
+  width: 0;
+}
